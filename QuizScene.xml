@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="TimerScene" extends="Scene">
+    <script type="text/brightscript" uri="pkg:/components/TimerScene.brs"/>
+
+    <children>
+        <label id="timerLabel"
+            text="Time: 10"
+            width="400" height="50"
+            translation="[100,100]"/>
+
+        <Timer id="countdownTimer" duration="1.0" repeat="true"/>
+
+        
+        <label id="questionLabel"
+            text="What is the capital of France?"
+            width="600" height="50"
+            translation="[100,200]"/>
+
+    
+        <LayoutGroup id="answerChoices" translation="[100, 300]">
+            <Label id="answerA" text="A. Paris" width="300" height="50"/>
+            <Label id="answerB" text="B. Rome" width="300" height="50"/>
+            <Label id="answerC" text="C. Berlin" width="300" height="50"/>
+            <Label id="answerD" text="D. Madrid" width="300" height="50"/>
+        </LayoutGroup>
+
+    </children>
+</component>
